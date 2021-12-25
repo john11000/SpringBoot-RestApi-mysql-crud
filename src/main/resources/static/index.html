@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Mi  primerar pagina en springboot</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spring boot cors</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-     <h1>Aprendiendo springboot 2.0</h1>
+    <div class="modal">
+
+        <div class="contenido-modal">
+            <div id="closeModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                    <path fill-rule="evenodd"
+                        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                </svg>
+            </div>
+            <div class="bodyModal">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="searchBar">
+            <div style="display: flex;">
+                <input type="search" name="producto" id="producto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+
+            </div>
+        </div>
+        <div class="usuarios">
+
+        </div>
+
+        <form method="POST" id="agregarUsuario">
+            <input type="number" placeholder="id" name="id" required />
+            <input type="text" placeholder="nombre" name="nombre" required />
+            <input type="text" placeholder="categoria" name="categoria" required />
+            <input type="text" placeholder="descripcion" name="descripcion" required />
+            <input type="text" placeholder="tipo" name="tipo" required />
+            <input type="number" placeholder="precio" name="precio" required />
+            <input type="submit" value="agregar" class="btn-submit">
+        </form>
+    </div>
+
+
 </body>
+<script src="js/index.js"></script>
+
 </html>
